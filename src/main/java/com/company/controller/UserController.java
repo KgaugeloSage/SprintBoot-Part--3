@@ -18,7 +18,7 @@ public class UserController {
     private UserServiceImpl userService;
 
 
-    @PutMapping(path = "user")
+    @PostMapping(path = "user")
     public boolean addUser(@RequestBody @Valid User user){
       return userService.addUser(user);
     }
